@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estadios de fútbol</title>
+  <link rel="stylesheet" href="estadios.css">
+</head>
+<body>
+<h1>Estadios de Fútbol</h1>
+<div class="container">
+  <table>
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Capacidad</th>
+      <th>Equipo</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="estadio : ${estadios}">
+      <td th:text="${estadio.id}"></td>
+      <td th:text="${estadio.nombre}"></td>
+      <td th:text="${estadio.capacidad}"></td>
+      <td th:text="${estadio.equipo_id.equipo}"></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+
+</html>

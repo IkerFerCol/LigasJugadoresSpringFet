@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Equipos de fútbol</title>
+  <link rel="stylesheet" href="equipo.css">
+
+</head>
+<body>
+<h1>Equipos de Fútbol</h1>
+<div class="container">
+  <table>
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Equipo</th>
+      <th>Lugar</th>
+      <th>Mejor Jugador</th>
+      <th>Imagen</th>
+      <th>Liga</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="equipo : ${equipos}">
+      <td th:text="${equipo.id}"></td>
+      <td th:text="${equipo.equipo}"></td>
+      <td th:text="${equipo.lugar}"></td>
+      <td th:text="${equipo.mejorjugador}"></td>
+      <td><img th:src="${equipo.imagen}" alt="Imagen del jugador" width="100"/></td>
+      <td th:text="${equipo.liga_id.nombre}"></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+
+</html>

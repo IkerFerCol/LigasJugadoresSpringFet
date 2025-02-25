@@ -1,0 +1,26 @@
+* {
+    font-family: Hack;
+}
+
+h1{
+    text-align: center;
+    color: red;
+}
+
+table {
+    margin: auto;
+    display: table;
+    width: 50%;
+    border-spacing: 20px;
+    background-color: #dfdede;
+    border: 2px #000000 solid;
+    box-shadow: 7px 7px black;
+    margin-bottom: 10px;
+}
+th, tr{
+    font-style: italic;
+    text-align: center;
+}
+body{
+    background-color: antiquewhite;
+}

@@ -1,0 +1,33 @@
+* {
+    font-family: Hack;
+}
+
+h1{
+    text-align: center;
+    color: coral;
+}
+
+table {
+    margin: auto;
+    display: table;
+    width: 50%;
+    background-color: #dfdede;
+    border: 2px #000000 solid;
+    border-spacing: 20px;
+    box-shadow: 7px 7px black;
+
+}
+
+
+
+th, tr{
+
+    font-style: italic;
+    text-align: center;
+    padding: 8px;
+}
+
+
+body{
+    background-color: antiquewhite;
+}

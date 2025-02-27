@@ -26,7 +26,6 @@ public class MvcController {
     EstadioRepository estadioRepository;
 
 
-
     @GetMapping("/equipo")
     public String getEquipos(Model model){
         model.addAttribute("equipos", equipoRepository.findAll());
@@ -42,6 +41,4 @@ public class MvcController {
         model.addAttribute("ligas", ligaRepository.findAll());
         return "ligas";
     }
-
-
 }
